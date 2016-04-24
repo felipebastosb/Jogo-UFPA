@@ -25,6 +25,7 @@ public class Acao
     private boolean Ganhou = false;
     private int Default;
     SorteRevez SorteRevez = new SorteRevez();
+    Nelson Nelson = new Nelson();
     
     public boolean Acao(Jogador jogador)
     {
@@ -266,11 +267,11 @@ public class Acao
                     this.Default = 1+gerador.nextInt(3);
                     if (this.Default == 2)
                     {
-                       SorteRevez.SorteRevez(Jogador); 
+                       SorteRevez.SorteRevez(this.Jogador); 
                     }
                     if(this.Default == 3)
                     {
-                        
+                        Nelson.Nelson(this.Jogador);
                     }
                 }
         }

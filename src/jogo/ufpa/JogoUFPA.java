@@ -18,9 +18,10 @@ public class JogoUFPA extends JFrame{
         Jogador Felipe = new Jogador();
         boolean ga;
         Felipe.setNome("Felipe");
-        Felipe.setPosicao(37);
+        Felipe.setPosicao(58);
         Acao Acao = new Acao();
         ga = Acao.Acao(Felipe);
+        System.out.println(ga);
     }
     
 }
