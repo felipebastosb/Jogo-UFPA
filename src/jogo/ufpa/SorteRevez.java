@@ -14,7 +14,7 @@ public class SorteRevez
     {
         this.Jogador = jogador;
         Random gerador = new Random();
-        this.Numero= gerador.nextInt(20);
+        this.Numero= 1+gerador.nextInt(20);
         
         switch (this.Numero)
         {
