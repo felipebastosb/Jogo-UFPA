@@ -6,8 +6,6 @@ import javax.swing.JOptionPane;
 public class SorteRevez 
 {   
     private int Numero;
-    private int CRG;
-    private boolean Pess;
     private Jogador Jogador;
     
     public void SorteRevez(Jogador jogador) 
