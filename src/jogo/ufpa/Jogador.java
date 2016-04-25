@@ -5,7 +5,7 @@ public class Jogador
 {
     private String Nome;  //Nick name do jogador.
     private int numero;   //Para orndem das rodadas.
-    private int CRG;      //Pontuação total.
+    private int CRG = 20;      //Pontuação total.
     private int Jubilado; //Número de vezes que o CRG chegou em 0. 
     private int Pass; //Número de rodadas sem jogar.
     private int Posicao; //Posição no mapa.
