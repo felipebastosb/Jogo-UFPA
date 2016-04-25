@@ -14,7 +14,8 @@ public class PosicaoJogador {
         this.Jogador = jogador;
         this.Posicao = Jogador.getPosicao();
         
-        switch (this.Posicao){
+        switch (this.Posicao)
+        {
             case 0:
             {
             ImageIcon ref = new ImageIcon("res//player1.png");
@@ -27,6 +28,8 @@ public class PosicaoJogador {
             
         }   
         
+    
+    }
     public int getX(){
         return x;
     }
@@ -37,7 +40,6 @@ public class PosicaoJogador {
     
     public Image getIcone(){
         return icone;
-    }
     }
 
 }
