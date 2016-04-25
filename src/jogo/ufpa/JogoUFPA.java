@@ -15,13 +15,20 @@ public class JogoUFPA extends JFrame{
 }
     
     public static void main(String[] args) {
+        Jogador Andre = new Jogador();
+        Andre.setNome("André");
+        
         Jogador Felipe = new Jogador();
-        boolean ga;
         Felipe.setNome("Felipe");
-        Felipe.setPosicao(58);
-        Acao Acao = new Acao();
-        ga = Acao.Acao(Felipe);
-        System.out.println(ga);
+        
+        Jogador Helder = new Jogador();
+        Helder.setNome("Helder");
+        
+        Jogador Joseph = new Jogador();
+        Joseph.setNome("Joseph");
+        
+        JogoCLI jogo = new JogoCLI();
+        jogo.JogoCLI(Andre, Felipe, Helder, Joseph);
     }
     
 }

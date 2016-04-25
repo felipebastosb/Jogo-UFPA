@@ -31,15 +31,15 @@ public class PosicaoJogador {
     
     }
     public int getX(){
-        return x;
+        return this.x;
     }
     
     public int getY(){
-        return y;
+        return this.y;
     }
     
     public Image getIcone(){
-        return icone;
+        return this.icone;
     }
 
 }
