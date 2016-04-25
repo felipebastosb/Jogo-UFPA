@@ -4,25 +4,29 @@ import java.awt.Image;
 import javax.swing.ImageIcon;
 
 public class PosicaoJogador {
-    private int x, y; //coordenadas no background
-    private int dx, dy; // variação das coordenadas
+    private int x,y; //coordenadas no background
     private Image icone; // icone do jogador
+    private Jogador Jogador;
+    private int Posicao;
     
-    
-    public PosicaoJogador(){
+    public void PosicaoJogador(Jogador jogador){
+
+        this.Jogador = jogador;
+        this.Posicao = Jogador.getPosicao();
         
-        ImageIcon referencia = new ImageIcon("res//player1.png");
-        icone = referencia.getImage();
+        switch (this.Posicao){
+            case 0:
+            {
+            ImageIcon ref = new ImageIcon("res//player1.png");
+            icone = ref.getImage();
+            this.x = 540;
+            this.y = 90;
+            
+            break;
+            }
+            
+        }   
         
-        this.x = 560;
-        this.y = 180;
-    }
-    
-    public void mexer(){
-        x += dx;
-        y += dy;
-    }
-     
     public int getX(){
         return x;
     }
@@ -34,5 +38,6 @@ public class PosicaoJogador {
     public Image getIcone(){
         return icone;
     }
-    
     }
+
+}
