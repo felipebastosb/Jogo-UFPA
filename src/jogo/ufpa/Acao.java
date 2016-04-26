@@ -258,8 +258,15 @@ public class Acao
             }
                 case 59:
             {
+                if(this.Jogador.isCahorro() == false)
+                {
                 JOptionPane.showMessageDialog(null,"HANGARZINHO - FORMATURA: Você ganhou o Jogo");
                 this.Ganhou = true;
+                }
+                else
+                {
+                    this.Jogador.setPosicao(0);
+                }
                 break;
             }
                 default:
